@@ -25,8 +25,14 @@ sudo apt update
 
 # Install desired packages
 sudo apt install -y i3 
+sudo apt install -y i3-wm
+sudo apt install -y i3lock
+sudo apt install -y i3lock-fancy
+sudo apt install -y i3status
+sudo apt install -y dunst
 sudo apt install -y synaptic 
 sudo apt install -y gdebi 
+sudo apt install -y lsb-release
 sudo apt install -y notepadqq 
 sudo apt install -y ranger 
 sudo apt install -y kitty 
