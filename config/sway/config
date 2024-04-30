@@ -69,13 +69,15 @@ bindsym Print exec grim $HOME/latest-screenshot.png | notify-send -u low -a "Scr
 bindsym $mod+Print exec slurp | grim -g - $HOME/latest-screenshot.png | notify-send -u low -a "Screenshot taken" -i "/usr/share/icons/Papirus/24x24/actions/image-crop.svg" -c "grim" "Screenshot taken" "Saved at ~/latest-screenshot.png"
 
 # Start a terminal
-bindsym $mod+Return exec foot
+bindsym $mod+Return exec kitty
 
 # Kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
+bindsym $mod+c kill
 
 # Start your launcher
-bindsym $mod+d exec fuzzel | xargs swaymsg exec --
+bindsym $mod+d exec wofi
+bindsym $mod+space exec rofi
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
@@ -85,7 +87,7 @@ bindsym $mod+d exec fuzzel | xargs swaymsg exec --
 floating_modifier $mod normal
 
 # Reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+r reload
 
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
