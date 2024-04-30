@@ -66,3 +66,6 @@ cp ./setup/cursor-index.theme ~/.icons/default/index.theme
 
 # Install icons & themes
 sudo apt install papirus-icon-theme libgtk-3-0 -y
+
+ sudo apt-get install --no-install-recommends -y sddm
+ sudo systemctl enable sddm
