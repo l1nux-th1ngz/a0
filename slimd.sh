@@ -6,15 +6,15 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-# Check if the user 'slim' exists on the system
-if id "slim" &>/dev/null; then
-    echo "User 'slim' exists. Updating sudoers file..."
+# Check if the user 'savage' exists on the system
+if id "savage" &>/dev/null; then
+    echo "User 'savage' exists. Updating sudoers file..."
 else
-    echo "User 'slim' does not exist. Exiting..."
+    echo "User 'savage' does not exist. Exiting..."
     exit 1
 fi
 
-# Create a file for 'slim' in the /etc/sudoers.d directory
-echo 'slim ALL=(ALL) NOPASSWD: ALL' | sudo EDITOR='tee -a' visudo -f /etc/sudoers.d/slim
+# Create a file for 'savage' in the /etc/sudoers.d directory
+echo 'savage ALL=(ALL) NOPASSWD: ALL' | sudo EDITOR='tee -a' visudo -f /etc/sudoers.d/savage
 
 echo "Operation completed successfully."
