@@ -32,12 +32,4 @@ cp -r -v ./config/* ~/.config
 printf "\n\n\n\n\n\n\n\n\n\n"
 
 cat << EOF
-# ===========================================================================
-# FINISH
-# ===========================================================================
 
-- It is recommended to restart your computer. Use "sway" command to enter desktop.
-  We assume you know basics of Sway, Waybar or Wayland in general. Each config is
-  easy to edit - left with comments. For more help - check installation steps on
-  project's github page. Good luck!
-EOF
