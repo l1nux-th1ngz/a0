@@ -1,0 +1,19 @@
+[Desktop Entry]
+Categories=System;Monitor;
+Comment[en_US]=
+Comment=XFCE-Polybar
+Exec=polybar --reload mainbar
+GenericName[en_US]=
+Icon=conky-logomark-violet
+MimeType=
+Name[en_AU]=
+Name=mainbar
+Path=/home/user/.config/polybar/
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
